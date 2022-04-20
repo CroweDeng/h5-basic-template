@@ -1,2 +1,4 @@
 # h5-basic-template
-with codePit preprocessor
+- with codeKit preprocessor
+- use dart sass 
+- with jquery demo hole website

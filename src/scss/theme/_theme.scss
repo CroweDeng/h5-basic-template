@@ -1,0 +1,12 @@
+@use '../utilities' as *;
+
+//? theme(data-theme 可自行定義)
+:root[data-theme='theme-dark'] {
+	//* 主色系列
+  // --color-blue-50: #d5d5dd;
+	// --color-blue-50-rgb: #{hexToRGB(#d5d5dd)};
+
+  //* 輔助色系列(主要是用來點綴或提示、警告那類的顏色)
+
+  //* 強調色系列(輔助主色，用來強調的主色)
+}

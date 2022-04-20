@@ -1,0 +1,12 @@
+@use '../vendors/sass-rem/' as rem;
+//? 基礎文字設定
+$base-font-size: rem.convert(16px) !default;
+$font-size-captions: rem.convert(10px) !default;
+$font-size-body1: rem.convert(14px) !default;
+$font-size-body2: rem.convert(16px) !default;
+$font-size-h6: rem.convert(20px) !default;
+$font-size-h5: rem.convert(24px) !default;
+$font-size-h4: rem.convert(32px) !default;
+$font-size-h3: rem.convert(38px) !default;
+$font-size-h2: rem.convert(48px) !default;
+$font-size-h1: rem.convert(62px) !default;

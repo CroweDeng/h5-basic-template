@@ -1,0 +1,31 @@
+@use '../utilities/' as *;
+@use '../vendors/sass-rem/' as rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: rem.convert($font-size-h1);
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+
+body {
+  //? 一些body的設定或圖片 
+}

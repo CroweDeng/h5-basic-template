@@ -1,0 +1,50 @@
+// input place holder hack
+@mixin placeholderColor($color, $opacity: 1) {
+	&::placeholder {
+		// Firefox 
+		opacity: $opacity; 
+		// Chrome, Firefox, Opera, Safari 10.1+
+		color: $color; 
+	}
+
+	&::input-placeholder { 
+		// Internet Explorer 10-11 */
+		color: $color;
+	}
+
+	&::input-placeholder {
+		// Microsoft Edge 
+		color: $color;
+	}
+
+	&:focus::placeholder {
+		color: transparent;
+	}
+}
+
+
+// hack chrome autofill
+@mixin hack-chrome-autoFill {
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-transition-delay: 99999s;
+
+	}
+}
+// 只在safari才有的樣式
+@mixin hack-onlyOnSafari {
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) {
+      @content;
+    }
+  }
+}
+
+// 只在firefox才有的樣式
+@mixin hack-onlyOnFirefox {
+  @-moz-document url-prefix() { 
+    @content;
+  }
+}
