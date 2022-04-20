@@ -1,54 +1,54 @@
 //? color function
 @function hexToRGB($hex) {
-	@return red($hex), green($hex), blue($hex);
+  @return red($hex), green($hex), blue($hex);
 }
 
 //? same size
 @mixin size($w, $h:$w) {
-	width: $w;
-	height: $h;
+  height: $h;
+  width: $w;
 }
 
 //? overflow
 @mixin overflow($direction: x) {
-	overflow: hidden;
-	overflow-#{direction}: auto;
-	-webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-#{direction}: auto;
 }
 
 //? 隱藏scroll bar
 @mixin hideScrollBar {
-	// fireforx
-	scrollbar-width: none;
-	// chrome, safari
-	&::-webkit-scrollbar {
-		display: none;
-	}
+  // fireforx
+  scrollbar-width: none;
+
+  // chrome, safari
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 //? 文字省略號
 @mixin text-overflow-multi($line) {
-	@if $line == 1 {
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
-	}
-	@else {
-		display: -webkit-box;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		word-break: break-word;
-		-webkit-line-clamp: $line;
-		-webkit-box-orient: vertical;
-	}
+  @if $line == 1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  } @else {
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
 }
 
 //? 固定全螢幕
 @mixin fixed-fullscreen($z-index:999) {
-	position: fixed;
-	z-index: $z-index;
-	inset: 0 0 auto auto;
-	width: 100%;
-	height: 100%;
+  height: 100%;
+  inset: 0 0 auto auto;
+  position: fixed;
+  width: 100%;
+  z-index: $z-index;
   @content;
 }

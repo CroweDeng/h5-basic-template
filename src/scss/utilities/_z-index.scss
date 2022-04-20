@@ -1,9 +1,6 @@
 //? 設定z-index堆疊，愈下zindex層級愈高
 $globalZIndexes: (
-  //? 命名可隨意或者按照自己的元件， null是基礎數值，需要變換可以填入數字
-  //* a: null,
-  //* b: 2000,
-);
+)        ;
 
 @function getZIndex($listKey) {
   @if map-has-key($globalZIndexes, $key: $listKey) {
@@ -13,14 +10,13 @@ $globalZIndexes: (
       @if $val == null {
         $zAccumulator: $zAccumulator + 1;
         $val: $zAccumulator;
-      }
-
-      @else {
+      } @else {
         @if $val <= $zAccumulator {
           //* If the z-index is not greater than the elements preceding it,
           //* the whole element-order paradigm is invalidated
-          @error "z-index for #{$key} must be greater than the preceding value!";
+          @error 'z-index for #{$key} must be greater than the preceding value!';
         }
+
         $zAccumulator: $val;
       }
 
@@ -28,9 +24,7 @@ $globalZIndexes: (
         @return $zAccumulator;
       }
     }
-  }
-
-  @else {
+  } @else {
     @error "#{$listKey} doesn't exist in the $globalZIndexes map";
   }
 }
