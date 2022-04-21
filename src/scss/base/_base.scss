@@ -8,11 +8,13 @@
 }
 
 html {
+  position: relative;
   // from https://tailwindcss.com/docs/font-family
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 body {
   //? 一些body的設定或圖片
+  min-height: 100vh;
 }
 
 h1 {
