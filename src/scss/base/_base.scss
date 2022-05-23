@@ -17,28 +17,16 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: $font-size-h1;
+
+$headTitleArr:(
+  h1: $font-size-h1,
+);
+
+@each $key,$var in $headTitleArr {
+  #{$key} {
+    font-size: rem.convert($var);
+  }
 }
 
-h2 {
-  font-size: $font-size-h2;
-}
-
-h3 {
-  font-size: $font-size-h3;
-}
-
-h4 {
-  font-size: $font-size-h4;
-}
-
-h5 {
-  font-size: $font-size-h5;
-}
-
-h6 {
-  font-size: $font-size-h6;
-}
 
 

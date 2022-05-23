@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="rem">Rem</h1>
+
+<p>Sass function and mixin to use rem units with optional pixel fallback.</p>
+
+<p><strong>Breaking change in 3.0</strong>: now using <a href="https://sass-lang.com/blog/the-module-system-is-launched">Sass Modules</a>, using <code>@use</code> and <code>rem</code> is renamed to <code>rem.convert</code>. You could still use <code>@import</code> with no changes (see usage below), but <strong>if you need LibSass and Ruby Sass support (both deprecated), you should stay on 2.0</strong> (which works fine) or use the <a href="https://github.com/pierreburel/postcss-rem">PostCSS</a> version.</p>
+
+<p><strong>Breaking change in 2.0</strong>: <code>$rem-fallback</code> is now set to <code>false</code> (<a href="http://caniuse.com/#feat=rem">see support</a>) and <code>$rem-baseline</code> to <code>16px</code> by default.</p>
+
+<p>Compatibility: <a href="https://sass-lang.com/dart-sass">Dart Sass</a> only.</p>
+
+<p>PostCSS version: https://github.com/pierreburel/postcss-rem</p>
+
+<p>See also: https://github.com/pierreburel/sass-em</p>
+
+<hr />
+
+<h2 id="installation">Installation</h2>
+
+<p>Install with <a href="https://yarnpkg.com/">Yarn</a> or <a href="https://www.npmjs.com/">npm</a>:</p>
+
+<ul>
+<li><code>yarn add sass-rem</code></li>
+<li><code>npm install sass-rem</code></li>
+</ul>
+
+<hr />
+
+<h2 id="usage">Usage</h2>
+
+<p>Import in your project depending of your setup:</p>
+
+<pre><code class="scss">@use &quot;rem&quot;;
+// or @use &quot;~sass-rem&quot; as rem;
+// or @use '../node_modules/sass-rem' as rem;
+
+.demo {
+  font-size: rem.convert(24px); // Simple
+  padding: rem.convert(5px 10px); // Multiple values
+  border-bottom: rem.convert(1px solid black); // Multiple mixed values
+  box-shadow: rem.convert(0 0 2px #ccc, inset 0 0 5px #eee); // Comma-separated values
+  // Multiple properties
+  @include rem.convert((
+    margin: 10px 5px,
+    text-shadow: (1px 1px #eee, -1px -1px #eee) // Parentheses needed because of comma
+  ));
+}
+</code></pre>
+
+<p>Will output:</p>
+
+<pre><code class="css">.demo {
+  font-size: 1.5rem;
+  padding: 0.3125rem 0.625rem;
+  border-bottom: 0.0625rem solid black;
+  box-shadow: 0 0 0.125rem #ccc, inset 0 0 0.3125rem #eee;
+  margin: 0.625rem 0.3125rem;
+  text-shadow: 0.0625rem 0.0625rem #eee, -0.0625rem -0.0625rem #eee;
+}
+</code></pre>
+
+<h2 id="butitwasshorterbefore"><em>But it was shorter before!</em></h2>
+
+<p>It was.</p>
+
+<p>But You can change the namespace to something shorter and use <code>rem</code> function and mixin instead of <code>convert</code>:</p>
+
+<pre><code class="scss">@use &quot;rem&quot; as to; // Because why not?
+
+.demo {
+  font-size: to.rem(24px);
+}
+</code></pre>
+
+<p>Or you can even load the library globally (but beware of conflicts, avoided by the idea of modules):</p>
+
+<pre><code class="scss">@use &quot;rem&quot; as *;
+
+.demo {
+  font-size: rem(24px);
+}
+</code></pre>
+
+<p>And if you just don&#8217;t want to use Sass Modules, you can still use <code>@import</code> with <code>rem</code> function, mixin and namespaced <code>$rem-*</code> variables as before:</p>
+
+<pre><code class="scss">@import &quot;sass-rem&quot;;
+
+$rem-baseline: 10px;
+
+.demo {
+  font-size: rem(24px);
+}
+</code></pre>
+
+<hr />
+
+<h2 id="usingpixelfallback">Using pixel fallback</h2>
+
+<p>You can enable pixel fallback by setting <code>$fallback</code> to <code>true</code>, but you will have to use the mixin instead of the function. The mixin accepts a map to convert multiple properties at once too:</p>
+
+<pre><code class="scss">@use &quot;rem&quot; with (
+  $fallback: true
+);
+
+.demo {
+  @include rem.convert(font-size, 24px); // Simple
+  @include rem.convert(padding, 5px 10px); // Multiple values
+  @include rem.convert(border-bottom, 1px solid black); // Multiple mixed values
+  @include rem.convert(box-shadow, 0 0 2px #ccc, inset 0 0 5px #eee); // Comma-separated values
+  // Multiple properties
+  @include rem.convert((
+    margin: 10px 5px,
+    text-shadow: (1px 1px #eee, -1px -1px #eee) // Parentheses needed because of comma
+  ));
+}
+</code></pre>
+
+<p>Will output:</p>
+
+<pre><code class="css">.demo {
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
+  border-bottom: 1px solid black;
+  border-bottom: 0.0625rem solid black;
+  box-shadow: 0 0 2px #ccc, inset 0 0 5px #eee;
+  box-shadow: 0 0 0.125rem #ccc, inset 0 0 0.3125rem #eee;
+  margin: 10px 5px;
+  margin: 0.625rem 0.3125rem;
+  text-shadow: 1px 1px #eee, -1px -1px #eee;
+  text-shadow: 0.0625rem 0.0625rem #eee, -0.0625rem -0.0625rem #eee;
+}
+</code></pre>
+
+<hr />
+
+<p>You can totally disable rem units by setting <code>$px-only</code> to <code>true</code> (for a lt-ie9 only stylesheet for example):</p>
+
+<pre><code class="css">.demo {
+  font-size: 24px;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 2px #ccc, inset 0 0 5px #eee;
+  margin: 10px;
+  text-shadow: 1px 1px #eee, -1px -1px #eee;
+}
+</code></pre>
+
+<hr />
+
+<h2 id="changingbaseline">Changing baseline</h2>
+
+<p>By default, sass-rem now uses a 16px baseline, but you can change this value with <code>$baseline</code> and by using the <code>baseline</code> mixin on the html element to adjust the root font size. The <code>rem</code> function and mixin will calculate rem values accordingly.
+For example, you can set <code>$baseline</code> to 10px to have a root font size of 62.5% and improve readability (10px = 1rem), which was the pre-2.0 behavior:</p>
+
+<pre><code class="scss">@use &quot;rem&quot; with (
+  $baseline: 10px
+);
+
+html {
+  @include rem.baseline;
+}
+
+.demo {
+  font-size: rem.convert(24px);
+}
+</code></pre>
+
+<p>Will output:</p>
+
+<pre><code class="css">html {
+  font-size: 62.5%;
+}
+
+.demo {
+  font-size: 2.4rem;
+}
+</code></pre>
+
+<hr />
+
+<p>You can also change the baseline zoom by passing the desired zoom to the <code>baseline</code> mixin which will calculate it depending of <code>$baseline</code>. Useful for creating responsive typography depending on viewport, especially with a different baseline than 16px:</p>
+
+<pre><code class="scss">@use &quot;rem&quot; with (
+  $baseline: 10px
+);
+
+html {
+  @include rem.baseline; // Default zoom to 100%
+
+  @media (max-width: 400px) {
+    @include rem.baseline(75%);
+  }
+
+  @media (min-width: 800px) {
+    @include rem.baseline(125%);
+  }
+}
+</code></pre>
+
+<p>Will output:</p>
+
+<pre><code class="css">html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 46.875%;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 78.125%;
+  }
+}
+</code></pre>
+
+</body>
+</html>
+

@@ -1,6 +1,3 @@
-# ignore codekit3
-*.codekit3
-
 #ignore node module
 node_modules/
 

@@ -2,11 +2,19 @@
 
 //? theme(data-theme 可自行定義)
 :root[data-theme='theme-dark'] {
-  //* 主色系列
-  // --color-blue-50: #d5d5dd;
-  // --color-blue-50-rgb: #{hexToRGB(#d5d5dd)};
+  $colors:( 
+    //* 主色系列
+    "primary-500":#477bb8,
 
-  //* 輔助色系列(主要是用來點綴或提示、警告那類的顏色)
+    //* 輔助色系列(主要是用來點綴或提示、警告那類的顏色)
+    "green-500": #47b84b,
+    "red-500": #b84b47,
 
-  //* 強調色系列(輔助主色，用來強調的主色)
+    //* 強調色系列(主要用來吸引與CTA-Call to Action)
+    "accent-500": #E0D077,
+    );
+  @each $i,$clr in $colors {
+     --color-#{$i}: #{$clr};
+     --color-#{$i}-rgb: #{hexToRGB($clr)};
+  }
 }
