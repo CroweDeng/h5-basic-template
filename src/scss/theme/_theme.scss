@@ -3,15 +3,15 @@
 //? theme(data-theme 可自行定義)
 :root[data-theme='theme-dark'] {
   $colors:( 
-    //* 主色系列
-    "primary-500":#477bb8,
+     //* 主色系列
+    'primary-500':#477BB8,
 
     //* 輔助色系列(主要是用來點綴或提示、警告那類的顏色)
-    "green-500": #47b84b,
-    "red-500": #b84b47,
+    'green-500': #47B84B,
+    'red-500': #B84B47,
 
     //* 強調色系列(主要用來吸引與CTA-Call to Action)
-    "accent-500": #E0D077,
+    'accent-500': #E0D077,
     );
   @each $i,$clr in $colors {
      --color-#{$i}: #{$clr};

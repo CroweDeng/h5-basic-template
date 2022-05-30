@@ -1,15 +1,7 @@
 {
   "extends": [
-      "stylelint-config-standard",
-      "stylelint-config-sass-guidelines",
-      "stylelint-config-standard-scss",
-      "stylelint-config-recommended-scss"
-  ],
-  "overrides": [
-    {
-      "files": ["**/*.{js}"],
-      "customSyntax": "postcss-lit"
-    }
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
   ],
   "plugins": ["stylelint-order"],
   "rules": {

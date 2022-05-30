@@ -64,12 +64,12 @@ thead,
 tr,
 th,
 td {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  outline: 0;
   padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  font-size: 100%;
+  outline: 0;
   vertical-align: baseline;
 }
 
@@ -79,17 +79,17 @@ html {
 }
 
 a {
-  background-color: transparent;
   border: 0;
+  background-color: transparent;
   color: currentcolor;
-  font: inherit;
   text-decoration: none;
+  font: inherit;
   vertical-align: baseline;
 }
 
 img {
-  border-style: none;
   display: block;
+  border-style: none;
 }
 
 ol,
@@ -107,10 +107,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  font-size: 100%; /* 1 */
+  font-family: inherit; /* 1 */
+  line-height: 1.15; /* 1 */
 }
 
 /**
@@ -152,8 +152,8 @@ button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
-  border-style: none;
   padding: 0;
+  border-style: none;
 }
 
 /**

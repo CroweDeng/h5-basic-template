@@ -1,0 +1,73 @@
+//? 出處 https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 480px) { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    @content;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@mixin mobile-landscape {
+  @media (min-width: 481px) and (max-width: 768px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    @content;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@mixin tablets-landscape {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)  { 
+    /* big landscape tablets, laptops, and desktops */ 
+    @content;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@mixin tablets-portrait {
+  @media (min-width: 768px) and (max-width: 1024px)  { 
+    /* big landscape tablets, laptops, and desktops */ 
+    @content;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@mixin desktops {
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+@mixin hi-res-monitors {
+  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+  @content;
+} 
+
+
+

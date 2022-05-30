@@ -4,10 +4,10 @@ const setFontSize = () => {
   let range = 1200;
   //判斷視窗寬度 調整font-size
   if (width > range) {
-    let scale = width / (range / 10);
+    let scale = width / (range / 16);
     $("html").css("font-size", scale + "px");
   } else {
-    $("html").css("font-size", "10px");
+    $("html").css("font-size", "16px");
   }
 };
 
