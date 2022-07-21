@@ -15,9 +15,13 @@ html {
 }
 
 body {
-  //? 一些body的設定或圖片
   min-height: 100vh;
+
+  //? 一些body的設定或圖片
+  background: rgba(var(--color-primary-500-rgb), .5);
+  
 }
+
 
 
 $headTitleArr:(

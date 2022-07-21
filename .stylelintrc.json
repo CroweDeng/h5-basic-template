@@ -12,6 +12,7 @@
     "color-hex-case": "upper",
     "block-no-empty": true,
     "indentation": 2,
+    "color-function-notation": "legacy",
     "color-hex-length": "long",
     "selector-type-no-unknown": [true, {
       "ignoreTypes": []
