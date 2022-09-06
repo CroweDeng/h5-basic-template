@@ -2,6 +2,7 @@
 
 //? theme(data-theme 可自行定義)
 :root[data-theme='theme-dark'] {
+  --base-font-size: 1rem;
   $colors:( 
     'primary-500':#477BB8,
     'green-500': #47B84B,

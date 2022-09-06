@@ -7,7 +7,7 @@ const setFontSize = () => {
     let scale = width / (range / 16);
     $("html").css("font-size", scale + "px");
   } else {
-    $("html").css("font-size", "16px");
+    $("html").css("font-size", "var(--base-font-size)");
   }
 };
 
