@@ -1,16 +1,103 @@
-@use '../utilities' as *;
+@use "../utilities" as *;
 
 //? theme(data-theme 可自行定義)
-:root[data-theme='theme-dark'] {
+:root {
+  //? 基礎設定
   --base-font-size: 1rem;
-  $colors:( 
-    'primary-500':#477BB8,
-    'green-500': #47B84B,
-    'red-500': #B84B47,
-    'accent-500': #E0D077,
+  --font-family-base: ui-sans-serif, system-ui, -apple-system, roboto, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-crimson-pro: "Crimson Pro", serif;
+
+  $colors: (
+    "gray-1":#FFFFFF,
+    "gray-2":#F7F7F7,
+    "gray-3":#F0F0F0,
+    "gray-4":#D9D9D9,
+    "gray-5":#BFBFBF,
+    "gray-6":#8C8C8C,
+    "gray-7":#595959,
+    "gray-8":#434343,
+    "gray-9":#262626,
+    "gray-10":#121212,
+    "gray-11":#000000,
+    "color-white": #FFFFFF,
+    "color-black": #000000,
   );
+
   @each $i,$clr in $colors {
     --color-#{$i}: #{$clr};
     --color-#{$i}-rgb: #{hexToRGB($clr)};
+  }
+
+  //? 反轉色設定
+  --color-emphasis-1: var(--gray-1);
+  --color-emphasis-2: var(--gray-2);
+  --color-emphasis-3: var(--gray-3);
+  --color-emphasis-4: var(--gray-4);
+  --color-emphasis-5: var(--gray-5);
+  --color-emphasis-6: var(--gray-6);
+  --color-emphasis-7: var(--gray-7);
+  --color-emphasis-8: var(--gray-8);
+  --color-emphasis-9: var(--gray-9);
+  --color-emphasis-10: var(--gray-10);
+
+  &[data-theme="theme-light"] {
+    //? browser agent setting
+    //? browser 預設試吃 light與root;
+    color-scheme: light;
+    
+    $colors: (
+      "primary-darkest":#2B1700,
+      "primary-darker":#472A00,
+      "primary-dark":#663E00,
+      "primary":#865300,
+      "primary-light":#C7821D,
+      "primary-lighter":#FFB961,
+      "primary-lightest":#FFEEDE,
+      "secondary":#715A41,
+      "tertiary":#54633D,
+      "bg":#FFFBFF,
+      "surface-light":#ECE8E0,
+      "surface-lighter":#F2EFEB,
+      "surface-lightest":#FFFBFF,
+      "outline":#79776A,
+    );
+
+    @each $i,$clr in $colors {
+      --color-#{$i}: #{$clr};
+      --color-#{$i}-rgb: #{hexToRGB($clr)};
+    }
+  }
+
+  &[data-theme="theme-dark"] {
+    //? 反轉色設定
+    --color-emphasis-1: var(--gray-10);
+    --color-emphasis-2: var(--gray-9);
+    --color-emphasis-3: var(--gray-8);
+    --color-emphasis-4: var(--gray-7);
+    --color-emphasis-5: var(--gray-6);
+    --color-emphasis-6: var(--gray-5);
+    --color-emphasis-7: var(--gray-4);
+    --color-emphasis-8: var(--gray-3);
+    --color-emphasis-9: var(--gray-2);
+    --color-emphasis-10: var(--gray-1);
+
+    //? browser agent setting
+    color-scheme: dark;
+
+    $colors: (
+      "primary":#7D5725,
+      "secondary":#DFC1A2,
+      "tertiary":#BCCD9E,
+      "bg":#1C1C17,
+      "surface-light":#313120,
+      "surface-lighter":#2A2A1D,
+      "surface-lightest":#25251B,
+      "outline":#939183,
+    );
+
+    @each $i,$clr in $colors {
+      --color-#{$i}: #{$clr};
+      --color-#{$i}-rgb: #{hexToRGB($clr)};
+    }
   }
 }

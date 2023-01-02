@@ -1,0 +1,29 @@
+@use "../utilities/" as *;
+@use "../vendors/sass-rem/" as rem;
+
+//? 元件 icon
+.ic-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  .ic {
+    @include size(100%);
+  }
+}
+
+.ic {
+  $icItems: "";
+
+  display: inline-block;
+  background: currentcolor;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+
+  @each $i in $icItems {
+    &--#{$i} {
+      mask-image: url("../img/icon/ic-#{$i}.svg");
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@use '../vendors/sass-rem/' as rem;
+@use "../vendors/sass-rem/" as rem;
 
 //? 基礎文字設定
 $font-size-captions: rem.convert(10px) !default;

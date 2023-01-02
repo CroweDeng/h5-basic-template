@@ -1,5 +1,5 @@
 doctype html
-html(lang="en" data-theme="theme-dark")
+html(lang="en" data-theme="theme-light")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -12,12 +12,24 @@ html(lang="en" data-theme="theme-dark")
 		//- cdn jQuery
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
 		script(src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous")
+		//- cdn google fonts
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet")
 		
-		<meta name="theme-color" content="#cfcfcf">
 	//- main content
 	body
-		h1 This is HTML5 template index
-		img(src="./img/test-img-cmpress.jpg", alt="")
+		.layout-grid
+			h1(style="margin-bottom: 20px") This is Temeplate
+			img(src="./img/test-img-cmpress.jpg", alt="demo" loading="lazy" style="width:400px; margin-bottom: 20px")
+			//- follow BEM rules
+			section.section(style="width: 800px")
+				h5.section__title Follow Bem Rules
+				main.section__content
+					p.txt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ad non dolores cupiditate iure magni id nemo quod assumenda pariatur quia rerum ducimus recusandae corrupti sint magnam, expedita laboriosam vero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellat magnam dicta enim iste veniam aut, quod labore reiciendis temporibus quidem id nulla soluta provident. Nam modi, ut nobis tenetur sequi officia expedita quibusdam totam ullam obcaecati optio repellendus placeat.
+			
+
+
 	
 	//- JS here
 	script(src="js/main.js")

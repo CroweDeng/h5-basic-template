@@ -1,11 +1,11 @@
 // input place holder hack
 @mixin placeholderColor($color, $opacity: 1) {
   &::placeholder {
-    // Firefox
-    opacity: $opacity;
-
     // Chrome, Firefox, Opera, Safari 10.1+
     color: $color;
+
+    // Firefox
+    opacity: $opacity;
   }
 
   &::input-placeholder {
@@ -35,7 +35,7 @@
 
 // 只在safari才有的樣式
 @mixin hack-onlyOnSafari {
-  @media not all and (min-resolution: .001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance:none) {
       @content;
     }

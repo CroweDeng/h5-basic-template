@@ -7,7 +7,7 @@
       "uuidString" : "FBAF9DEA-64EA-4FF2-9140-0034E8AB02E4"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -49,9 +49,9 @@
     },
     "\/node_modules" : {
       "ft" : 65536,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/dist\/node_modules",
-      "oF" : 0
+      "oF" : 1
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -180,6 +180,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/scss\/components\/_icon.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_icon.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/scss\/components\/_index.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -195,6 +210,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/scss\/components\/_section.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_section.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/scss\/layout\/_index.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -205,6 +235,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/layout\/_index.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/scss\/layout\/_layout-grid.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/layout\/_layout-grid.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -405,30 +450,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/scss\/vendors\/sass-rem\/index.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/index-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/index.import.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/index.import-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/src\/scss\/vendors\/sass-rem\/index.import.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -526,7 +547,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 674970989.98277199
+    "lastBuiltDate" : 684148602.71905398
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1233,7 +1254,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
