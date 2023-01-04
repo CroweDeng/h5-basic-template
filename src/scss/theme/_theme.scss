@@ -3,7 +3,6 @@
 //? theme(data-theme 可自行定義)
 :root {
   //? 基礎設定
-  --base-font-size: 1rem;
   --font-family-base: ui-sans-serif, system-ui, -apple-system, roboto, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-crimson-pro: "Crimson Pro", serif;
 
@@ -18,9 +17,8 @@
     "gray-8":#434343,
     "gray-9":#262626,
     "gray-10":#121212,
-    "gray-11":#000000,
-    "color-white": #FFFFFF,
-    "color-black": #000000,
+    "white": #FFFFFF,
+    "black": #000000,
   );
 
   @each $i,$clr in $colors {
@@ -29,22 +27,23 @@
   }
 
   //? 反轉色設定
-  --color-emphasis-1: var(--gray-1);
-  --color-emphasis-2: var(--gray-2);
-  --color-emphasis-3: var(--gray-3);
-  --color-emphasis-4: var(--gray-4);
-  --color-emphasis-5: var(--gray-5);
-  --color-emphasis-6: var(--gray-6);
-  --color-emphasis-7: var(--gray-7);
-  --color-emphasis-8: var(--gray-8);
-  --color-emphasis-9: var(--gray-9);
-  --color-emphasis-10: var(--gray-10);
+  --color-emphasis-1: var(--color-gray-1);
+  --color-emphasis-2: var(--color-gray-2);
+  --color-emphasis-3: var(--color-gray-3);
+  --color-emphasis-4: var(--color-gray-4);
+  --color-emphasis-5: var(--color-gray-5);
+  --color-emphasis-6: var(--color-gray-6);
+  --color-emphasis-7: var(--color-gray-7);
+  --color-emphasis-8: var(--color-gray-8);
+  --color-emphasis-9: var(--color-gray-9);
+  --color-emphasis-10: var(--color-gray-10);
 
   &[data-theme="theme-light"] {
     //? browser agent setting
     //? browser 預設試吃 light與root;
     color-scheme: light;
-    
+
+
     $colors: (
       "primary-darkest":#2B1700,
       "primary-darker":#472A00,
@@ -70,16 +69,16 @@
 
   &[data-theme="theme-dark"] {
     //? 反轉色設定
-    --color-emphasis-1: var(--gray-10);
-    --color-emphasis-2: var(--gray-9);
-    --color-emphasis-3: var(--gray-8);
-    --color-emphasis-4: var(--gray-7);
-    --color-emphasis-5: var(--gray-6);
-    --color-emphasis-6: var(--gray-5);
-    --color-emphasis-7: var(--gray-4);
-    --color-emphasis-8: var(--gray-3);
-    --color-emphasis-9: var(--gray-2);
-    --color-emphasis-10: var(--gray-1);
+    --color-emphasis-1: var(--color-gray-10);
+    --color-emphasis-2: var(--color-gray-9);
+    --color-emphasis-3: var(--color-gray-8);
+    --color-emphasis-4: var(--color-gray-7);
+    --color-emphasis-5: var(--color-gray-6);
+    --color-emphasis-6: var(--color-gray-5);
+    --color-emphasis-7: var(--color-gray-4);
+    --color-emphasis-8: var(--color-gray-3);
+    --color-emphasis-9: var(--color-gray-2);
+    --color-emphasis-10: var(--color-gray-1);
 
     //? browser agent setting
     color-scheme: dark;

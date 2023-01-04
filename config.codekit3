@@ -33,12 +33,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/dist" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/dist\/dist",
-      "oF" : 0
-    },
     "\/LICENSE" : {
       "cB" : 0,
       "ft" : 8192,
@@ -547,7 +541,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 684148602.71905398
+    "lastBuiltDate" : 694516478.01005101
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

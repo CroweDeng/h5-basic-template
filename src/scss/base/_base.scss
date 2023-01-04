@@ -9,9 +9,6 @@
 
 html {
   position: relative;
-
-  // from https://tailwindcss.com/docs/font-family
-  font-size: var(--base-font-size);
   font-family: var(--font-family-base);
 }
 
@@ -21,6 +18,7 @@ body {
   //? 一些body的設定或圖片
   background: var(--color-bg);
 }
+
 
 //? base title font-size
 $headTitleArr: (
