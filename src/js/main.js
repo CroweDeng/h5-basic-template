@@ -21,7 +21,7 @@ const setFontSize = (device, range) => {
         let scale = width / (range / 12);
         $("html").css("font-size", scale + "px");
       } else {
-        $("html").css("font-size", "10px");
+        $("html").css("font-size", "16px");
       }
       break;
   }
@@ -38,6 +38,7 @@ $(document).ready(function () {
   console.log("Hello Main.js Here!");
   //? set html base font size
   setFontSize();
+  documentHeight();
   window.onresize = function () {
     setFontSize("desktop", "1200");
     documentHeight();

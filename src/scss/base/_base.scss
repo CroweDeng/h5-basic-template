@@ -9,12 +9,14 @@
 
 html {
   position: relative;
+  height: fill-available;
   font-family: var(--font-family-base);
 }
 
 body {
   height: var(--doc-height, 100vh);
-
+  min-height: fill-available;
+  
   //? 一些body的設定或圖片
   background: var(--color-bg);
 }
