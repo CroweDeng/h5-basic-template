@@ -24,6 +24,9 @@ const setFontSize = (device, range) => {
         $("html").css("font-size", "16px");
       }
       break;
+    default :
+      $("html").css("font-size", "16px");
+      break;
   }
 };
 
@@ -34,12 +37,15 @@ const documentHeight = () => {
   doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
 };
 
+
 $(document).ready(function () {
   console.log("Hello Main.js Here!");
   //? set html base font size
   setFontSize();
   documentHeight();
+  //? onresize to reset setFontSize & documentHeight
   window.onresize = function () {
+    //? desktop first
     setFontSize("desktop", "1200");
     documentHeight();
   };
