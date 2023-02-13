@@ -37,3 +37,13 @@ $headTitleArr: (
     font-size: $var;
   }
 }
+
+
+//! 配合img objet-fit: contain img-box需要固定的高度或吃父層的高度
+.img-box {
+  img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}

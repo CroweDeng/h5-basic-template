@@ -23,7 +23,7 @@
 
   @each $i in $icItems {
     &--#{$i} {
-      mask-image: url("../img/icon/ic-#{$i}.svg");
+      mask-image: url("../images/icon/ic-#{$i}.svg");
     }
   }
 }

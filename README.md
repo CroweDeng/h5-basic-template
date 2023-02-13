@@ -10,3 +10,7 @@
 - node_modules/
 <!-- ignore production env. file -->
 - /dist
+
+# Author
+- Crowe Deng
+- LinLin Juan

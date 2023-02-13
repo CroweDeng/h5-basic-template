@@ -7,7 +7,7 @@
       "uuidString" : "FBAF9DEA-64EA-4FF2-9140-0034E8AB02E4"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34448",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -33,10 +33,12 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/dist" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/dist\/dist",
+    "\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/favicon.ico",
       "oF" : 0
     },
     "\/LICENSE" : {
@@ -88,12 +90,12 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/src\/img\/test-img-cmpress.jpg" : {
+    "\/src\/images\/test-img-cmpress.jpg" : {
       "ft" : 16384,
       "iS" : 16407,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/dist\/img\/test-img-cmpress.jpg",
+      "oAP" : "\/dist\/images\/test-img-cmpress.jpg",
       "oF" : 2,
       "oIPL" : 0,
       "opt" : 1,
@@ -101,11 +103,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/src\/img\/test-img-cmpress.png" : {
+    "\/src\/images\/test-img-cmpress.png" : {
       "ft" : 32768,
       "iS" : 19641,
       "oA" : 0,
-      "oAP" : "\/dist\/img\/test-img-cmpress.png",
+      "oAP" : "\/dist\/images\/test-img-cmpress.png",
       "oF" : 2,
       "oIPL" : 0,
       "opt" : 1,
@@ -547,7 +549,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 694858506.13387597
+    "lastBuiltDate" : 697966589.32662797
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1063,6 +1065,10 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
+      "logical-assignment-operators" : {
+        "active" : 0,
+        "optionString" : "'always',  {'enforceForIfStatements': false}"
+      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "{'ignoreExpressions': false, 'max': 1}"
@@ -1223,6 +1229,9 @@
       "no-empty-pattern" : {
         "active" : 1
       },
+      "no-empty-static-block" : {
+        "active" : 0
+      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -1361,6 +1370,9 @@
         "active" : 0
       },
       "no-new-func" : {
+        "active" : 0
+      },
+      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {
@@ -2177,7 +2189,7 @@
       },
       "comments" : {
         "active" : 0,
-        "flagValue" : -1
+        "flagValue" : 1
       },
       "comparisons" : {
         "active" : 1,
