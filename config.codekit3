@@ -33,6 +33,12 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/dist" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/dist\/dist",
+      "oF" : 0
+    },
     "\/favicon.ico" : {
       "cB" : 0,
       "ft" : 8192,

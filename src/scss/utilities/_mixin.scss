@@ -13,7 +13,7 @@
 @mixin overflow($direction: x) {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  overflow-#{direction}: auto;
+  overflow-#{$direction}: auto;
 }
 
 //? 隱藏scroll bar
