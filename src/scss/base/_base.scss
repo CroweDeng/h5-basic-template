@@ -11,6 +11,9 @@ html {
   position: relative;
   height: fill-available;
   font-family: var(--font-family-base);
+  // font size clamp設定 min-vw 320px, min-font-size: 16px, max-vw 1200px, max-font-size: 24px
+  // font size clamp generator https://reurl.cc/xlKg8Z
+  font-size: clamp(1rem, 0.6429rem + 1.1429vw, 1.5rem);
 }
 
 body {
