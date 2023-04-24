@@ -1,12 +1,20 @@
 @use "../vendors/sass-rem/" as rem;
 
 //? 基礎文字設定
-$font-size-captions: rem.convert(10px) !default;
-$font-size-body1: rem.convert(14px) !default;
-$font-size-body2: rem.convert(16px) !default;
-$font-size-h6: rem.convert(20px) !default;
-$font-size-h5: rem.convert(24px) !default;
-$font-size-h4: rem.convert(32px) !default;
-$font-size-h3: rem.convert(38px) !default;
-$font-size-h2: rem.convert(48px) !default;
-$font-size-h1: rem.convert(62px) !default;
+:root {
+  $fontSize: (
+    fz-caption: rem.convert(10px),
+    fz-s: rem.convert(12px),
+    fz-m: rem.convert(14px),
+    fz-l: rem.convert(16px),
+    fz-xl: rem.convert(20px),
+    fz-xxl: rem.convert(24px),
+    fz-xxxl: rem.convert(32px),
+    fz-big: rem.convert(48px),
+    fz-extra-big: rem.convert(62px),
+  );
+
+  @each $key, $val in $fontSize {
+    --#{$key}: #{$val};
+  }
+}

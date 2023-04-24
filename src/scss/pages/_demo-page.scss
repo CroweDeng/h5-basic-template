@@ -1,0 +1,6 @@
+@use "../utilities/" as *;
+@use "../vendors/sass-rem/" as rem;
+
+h1 {
+  font-size: var(--fz-extra-big);
+}
