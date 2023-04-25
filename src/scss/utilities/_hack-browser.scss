@@ -9,11 +9,6 @@
   }
 
   &::input-placeholder {
-    // Internet Explorer 10-11 */
-    color: $color;
-  }
-
-  &::input-placeholder {
     // Microsoft Edge
     color: $color;
   }
@@ -35,7 +30,7 @@
 
 // 只在safari才有的樣式
 @mixin hack-onlyOnSafari {
-  @media not all and (min-resolution: 0.001dpcm) {
+  @media not all and (min-resolution: .001dpcm) {
     @supports (-webkit-appearance:none) {
       @content;
     }

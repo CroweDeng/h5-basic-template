@@ -2,5 +2,8 @@
 @use "../vendors/sass-rem/" as rem;
 
 h1 {
+  display: flex;
+  width: 100px;
+  color: red;
   font-size: var(--fz-extra-big);
 }

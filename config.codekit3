@@ -7,7 +7,7 @@
       "uuidString" : "FBAF9DEA-64EA-4FF2-9140-0034E8AB02E4"
     }
   ],
-  "creatorBuild" : "34448",
+  "creatorBuild" : "34484",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -57,9 +57,9 @@
     },
     "\/node_modules" : {
       "ft" : 65536,
-      "oA" : 1,
+      "oA" : 2,
       "oAP" : "\/dist\/node_modules",
-      "oF" : 1
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -105,7 +105,7 @@
       "oF" : 2,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-photo",
       "q" : 100,
       "rq" : 75
     },
@@ -118,7 +118,7 @@
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-photo",
       "q" : 100,
       "rq" : 75
     },
@@ -130,7 +130,7 @@
       "oA" : 0,
       "oAP" : "\/dist\/index.html",
       "oF" : 2,
-      "oS" : 1
+      "oS" : 0
     },
     "\/src\/js\/main.js" : {
       "bF" : 4,
@@ -154,7 +154,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/base\/_base.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -169,7 +169,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/base\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -184,7 +184,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/base\/_reset.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -199,7 +199,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/components\/_icon.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -214,7 +214,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/components\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -229,7 +229,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/components\/_section.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -244,7 +244,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/layout\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -259,7 +259,22 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/layout\/_layout-grid.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/scss\/pages\/_demo-page.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 3,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/pages\/_demo-page.css",
+      "oF" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -274,7 +289,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/pages\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -289,7 +304,7 @@
       "oA" : 0,
       "oAP" : "\/dist\/css\/style.css",
       "oF" : 2,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -304,7 +319,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/theme\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -319,7 +334,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/theme\/_theme.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -334,7 +349,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_animation.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -349,7 +364,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_breakPoint.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -364,7 +379,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_font-size.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -379,7 +394,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_hack-browser.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -394,7 +409,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -409,7 +424,7 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_mixin.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
@@ -424,123 +439,15 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/utilities\/_z-index.css",
       "oF" : 0,
-      "oS" : 0,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/scss\/vendors\/_index.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 3,
+    "\/src\/scss\/vendors" : {
+      "ft" : 65536,
       "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/_index.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/_rem.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 3,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/_rem.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/index.import.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 3,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/index.import.css",
-      "oF" : 1,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/index.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 3,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/index.css",
-      "oF" : 1,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/LICENSE.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/LICENSE.html",
+      "oAP" : "\/dist\/scss\/vendors",
       "oF" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/LICENSE.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/LICENSE.html",
-      "oF" : 1,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/README.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/README.html",
-      "oF" : 0
-    },
-    "\/src\/scss\/vendors\/sass-rem\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/vendors\/sass-rem\/README.html",
-      "oF" : 1,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     }
   },
   "hooks" : [
@@ -555,7 +462,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 697966589.32662797
+    "lastBuiltDate" : 704063202.87298596
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1838,7 +1745,7 @@
     },
     "languageDefaultsCSS" : {
       "autoOutputAction" : 0,
-      "autoOutputPathFilenamePattern" : "*-min.css",
+      "autoOutputPathFilenamePattern" : "*.css",
       "autoOutputPathRelativePath" : "",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
@@ -1885,13 +1792,13 @@
       "autoOutputPathStyle" : 0,
       "outputFormat" : 0,
       "quality" : 100,
-      "webpOptimizationPresetUUID" : "lpckwebp-none",
+      "webpOptimizationPresetUUID" : "lpckwebp-photo",
       "webpRGBQuality" : 75
     },
     "languageDefaultsJS" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
-      "autoOutputPathRelativePath" : "\/min",
+      "autoOutputPathRelativePath" : "",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
@@ -1981,7 +1888,7 @@
       "autoOutputPathStyle" : 0,
       "optimizerType" : 1,
       "quality" : 100,
-      "webpOptimizationPresetUUID" : "lpckwebp-none",
+      "webpOptimizationPresetUUID" : "lpckwebp-photo",
       "webpRGBQuality" : 75
     },
     "languageDefaultsPUG" : {
@@ -1993,13 +1900,13 @@
       "autoOutputPathStyle" : 0,
       "compileDebug" : 1,
       "htmlMinifierStyle" : 0,
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "shouldRunCacheBuster" : 0
     },
     "languageDefaultsSASS" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.css",
-      "autoOutputPathRelativePath" : "..\/css",
+      "autoOutputPathRelativePath" : "\/css",
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 0,
@@ -2007,7 +1914,7 @@
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
-      "outputStyle" : 0,
+      "outputStyle" : 1,
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
@@ -2069,7 +1976,7 @@
       "moduleType" : 2,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
-      "targetECMAVersion" : 0
+      "targetECMAVersion" : 2018
     },
     "languageDefaultsUserDefined" : [
 
@@ -2121,10 +2028,14 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
+    "rollupTreeshakingModuleSideEffects" : 1,
+    "skippedFoldersString" : "\/storage\/framework\/sessions,\/src\/scss\/vendors,node_modules,_logs,logs,log,.idea,_cache,cache",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
+    "tsAllowArbitraryExtensions" : 0,
+    "tsAllowImportingTSExtensions" : 0,
     "tsAllowSyntheticDefaultImports" : 0,
+    "tsAllowUMDGlobalAccess" : 0,
     "tsAllowUnreachableCode" : 0,
     "tsAllowUnusedLabels" : 0,
     "tsAlwaysStrict" : 0,
@@ -2133,36 +2044,36 @@
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
     "tsExactOptionalPropertyTypes" : 0,
+    "tsExperimentalDecorators" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
-    "tsKeyofStringsOnly" : 0,
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
     "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
-    "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
     "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
-    "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
     "tsNoUnusedLocals" : 0,
     "tsNoUnusedParameters" : 0,
     "tsPreserveConstEnums" : 0,
     "tsPreserveSymlinks" : 0,
     "tsResolveJsonModule" : 0,
+    "tsSkipDefaultLibCheck" : 0,
     "tsSkipLibCheck" : 0,
+    "tsStrictBindCallApply" : 0,
     "tsStrictFunctionTypes" : 0,
     "tsStrictNullChecks" : 0,
     "tsStrictPropertyInitialization" : 0,
     "tsStripInternal" : 0,
-    "tsSuppressExcessPropertyErrors" : 0,
-    "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseDefineForClassFields" : 0,
     "tsUseUnknownInCatchVariables" : 0,
+    "tsVerbatimModuleSyntax" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

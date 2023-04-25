@@ -13,17 +13,20 @@
 }
 
 .ic {
-  $icItems: "";
-
+  $icItems: null;
   display: inline-block;
   background: currentcolor;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-
-  @each $i in $icItems {
-    &--#{$i} {
-      mask-image: url("../images/icon/ic-#{$i}.svg");
+  @if not $icItems {
+    // 空值則不compile
+  }
+  @else {
+    @each $i in $icItems {
+      &--#{$i} {
+        mask-image: url("../images/icon/ic-#{$i}.svg");
+      }
     }
   }
 }
