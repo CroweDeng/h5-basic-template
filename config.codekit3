@@ -428,6 +428,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/scss\/utilities\/_svg.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 3,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/utilities\/_svg.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/scss\/utilities\/_z-index.scss" : {
       "aP" : 0,
       "bl" : 0,

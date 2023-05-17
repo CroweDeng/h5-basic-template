@@ -13,12 +13,14 @@
 }
 
 .ic {
-  $icItems: null;
   display: inline-block;
   background: currentcolor;
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
+  //? 這個做法建議在web上使用，若沒有使用可以將下方行數刪除
+  //? 效能優先以SVG Sprite 或 SVG
+  // mask-repeat: no-repeat;
+  // mask-position: center center;
+  // mask-size: contain;
+  $icItems: null;
   @if not $icItems {
     // 空值則不compile
   }
