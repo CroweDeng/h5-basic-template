@@ -1,20 +1,29 @@
-@use "../vendors/sass-rem/" as rem;
+@use '../vendors/sass-rem/rem' as *;
 
-//? 基礎文字設定
+//? base title font-size
 :root {
+
   $fontSize: (
-    fz-caption: rem.convert(10px),
-    fz-s: rem.convert(12px),
-    fz-m: rem.convert(14px),
-    fz-l: rem.convert(16px),
-    fz-xl: rem.convert(20px),
-    fz-xxl: rem.convert(24px),
-    fz-xxxl: rem.convert(32px),
-    fz-big: rem.convert(48px),
-    fz-extra-big: rem.convert(62px),
+    fz-xxl:rem(34px),
+    fz-xl:rem(24px),
+    fz-l:rem(20px),
+    fz-m:rem(16px),
+    fz-s:rem(14px),
+    fz-xs:rem(13px),
+    fz-xxs:rem(12px),
   );
 
   @each $key, $val in $fontSize {
+    --#{$key}: #{$val};
+  }
+
+  $fontWeight: (
+    fw-normal: 500,
+    fw-bold: 700,
+    fw-bolder: 900,
+  );
+
+  @each $key, $val in $fontWeight {
     --#{$key}: #{$val};
   }
 }

@@ -3,7 +3,7 @@
 //? theme(data-theme 可自行定義)
 :root {
   //? 基礎設定
-  --font-family-base: ui-sans-serif, system-ui, -apple-system, roboto, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-base: "Noto Sans",ui-sans-serif, system-ui, -apple-system, roboto, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-crimson-pro: "Crimson Pro", serif;
 
   $colors: (
@@ -42,7 +42,6 @@
     //? browser agent setting
     //? browser 預設試吃 light與root;
     color-scheme: light;
-
 
     $colors: (
       "primary-darkest":#2B1700,

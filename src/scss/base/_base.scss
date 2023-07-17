@@ -1,5 +1,5 @@
 @use "../utilities/" as *;
-@use "../vendors/sass-rem/" as rem;
+@use "../vendors/sass-rem/rem" as *;
 
 * {
   box-sizing: border-box;
@@ -11,9 +11,9 @@ html {
   position: relative;
   height: fill-available;
 
-  // font size clamp設定 min-vw 320px, min-font-size: 16px, max-vw 1200px, max-font-size: 24px
+  // font size clamp設定 min-vw 320px, min-font-size: 16px, max-vw 1024px, max-font-size: 20px
   // font size clamp generator https://reurl.cc/xlKg8Z
-  font-size: clamp(1rem, 0.6429rem + 1.1429vw, 1.5rem);
+  // font-size: clamp(1rem, .8864rem + .5682vw, 1.25rem);
   font-family: var(--font-family-base);
 }
 
@@ -22,9 +22,8 @@ body {
   min-height: fill-available;
 
   //? 一些body的設定或圖片
-  background: var(--color-bg);
+  background: var(--color-bg, #FFFFFF);
 }
-
 
 //! 配合img objet-fit: contain img-box需要固定的高度或吃父層的高度
 .img-box {
@@ -32,5 +31,59 @@ body {
     object-fit: contain;
     object-position: center;
     height: 100%;
+  }
+}
+
+//? 文字全域基本設定
+//? line-heigh https://www.thegoodlineheight.com/ 設定
+.txt {
+  // fz 14px
+  font-size: var(--fz-s);
+  line-height: rem(18px);
+
+  &--xxs {
+    // fz 12px
+    font-size: var(--fz-xxs);
+    line-height: rem(18px);
+  }
+
+  &--xs {
+    // fz 13px
+    font-size: var(--fz-xs);
+    line-height: rem(18px);
+  }
+
+  &--m {
+    // fz 16px
+    font-size: var(--fz-m);
+    line-height: rem(24px);
+  }
+
+  &--l {
+    // fz 20px
+    font-size: var(--fz-l);
+    line-height: rem(24px);
+  }
+
+  &--xl {
+    // fz 24px
+    font-size: var(--fz-xl);
+    line-height: rem(32px);
+  }
+
+  &--xxl {
+    // fz 34px
+    font-size: var(--fz-xxl);
+    line-height: rem(48px);
+  }
+
+  &--bold {
+    // fw 700
+    font-weight: var(--fw-bold);
+  }
+
+  &--bolder {
+    // fw 900
+    font-weight: var(--fw-bolder);
   }
 }

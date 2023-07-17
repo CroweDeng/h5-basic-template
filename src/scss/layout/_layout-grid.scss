@@ -1,7 +1,8 @@
 @use '../utilities/' as *;
-@use '../vendors/sass-rem/' as rem;
+@use '../vendors/sass-rem/rem' as *;
+
 .layout-grid {
   display: grid;
   place-items: center;
-  padding: max(5vw, #{rem.convert(32px)});
+  padding: max(5vw, #{rem(32px)});
 }
