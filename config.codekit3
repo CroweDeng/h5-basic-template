@@ -7,7 +7,7 @@
       "uuidString" : "FBAF9DEA-64EA-4FF2-9140-0034E8AB02E4"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34484",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -95,6 +95,19 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/src\/images\/assets\/loss-url.png" : {
+      "ft" : 32768,
+      "iS" : 2177,
+      "oA" : 0,
+      "oAP" : "\/dist\/images\/assets\/loss-url.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 100,
+      "rq" : 75
     },
     "\/src\/images\/test-img-cmpress.jpg" : {
       "ft" : 16384,

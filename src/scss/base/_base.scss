@@ -2,6 +2,7 @@
 @use "../vendors/sass-rem/rem" as *;
 
 * {
+  position: relative;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,23 +11,40 @@
 html {
   position: relative;
   height: fill-available;
-
-  // font size clamp設定 min-vw 320px, min-font-size: 16px, max-vw 1024px, max-font-size: 20px
   // font size clamp generator https://reurl.cc/xlKg8Z
-  // font-size: clamp(1rem, .8864rem + .5682vw, 1.25rem);
+  font-size: clamp(1rem, .8864rem + .5682vw, 1.25rem);
   font-family: var(--font-family-base);
 }
 
 body {
-  height: var(--doc-height, 100vh);
+  height: 100dvh;
   min-height: fill-available;
+  @supports not(height: 100dvh) {
+    height: var(--doc-height, 100vh);
+  }
 
   //? 一些body的設定或圖片
   background: var(--color-bg, #FFFFFF);
 }
 
+//? 破圖遮罩
+img {
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:image-set(url('../images/assets/loss-url.webp') ,
+    url('../images/assets/loss-url.png')) #414158 no-repeat center / contain;
+    color: transparent;
+    @supports not(background-image: image-set(url('../'))) {
+      background: url('../images/assets/loss-url.png') #414158 no-repeat center / contain;
+    }
+  }
+}
 //! 配合img objet-fit: contain img-box需要固定的高度或吃父層的高度
 .img-box {
+  display: block;
+
   img {
     object-fit: contain;
     object-position: center;
