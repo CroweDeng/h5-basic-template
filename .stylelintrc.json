@@ -40,8 +40,9 @@
       "max-empty-lines": 1,
       "no-eol-whitespace": true,
       "comment-whitespace-inside":"always",
-      "selector-max-compound-selectors": 3,
+      "selector-max-compound-selectors": 4,
       "function-no-unknown": null,
+      "no-descending-specificity": null,
       "order/properties-order": [
         "content",
         "position",

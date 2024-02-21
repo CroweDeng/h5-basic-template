@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "stylelint": "^15.6.0",
-    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^4.6.0"
