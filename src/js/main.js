@@ -11,7 +11,7 @@ window.onload = function () {
   }
 };
 
-//? set fontSize -> 適合Web使用
+//? set fontSize -> 視開發使用，目前已經用sccs/_base.scss 15行clamp取代
 const setFontSize = () => {
   let width = document.documentElement.clientWidth;
   // console.log(width);
@@ -31,6 +31,6 @@ $(document).ready(function () {
   //? onresize to reset setFontSize & documentHeight
   window.onresize = function () {
     documentHeight();
-    setFontSize();
+    // setFontSize();
   };
 });
