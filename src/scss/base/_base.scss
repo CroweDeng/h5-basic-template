@@ -10,7 +10,6 @@
 
 html {
   position: relative;
-  height: fill-available;
   // font size clamp generator https://reurl.cc/xlKg8Z
   font-size: clamp(1rem, .8182rem + .9091vw, 1.5rem);
   font-family: var(--font-family-base);
@@ -18,7 +17,6 @@ html {
 
 body {
   height: 100dvh;
-  min-height: fill-available;
   @supports not(height: 100dvh) {
     height: var(--doc-height, 100vh);
   }
@@ -55,53 +53,47 @@ img {
 //? 文字全域基本設定
 //? line-heigh https://www.thegoodlineheight.com/ 設定
 .txt {
-  // fz 14px
-  font-size: var(--fz-s);
+  // body
+  font-size: var(--fz-14);
   line-height: rem(18px);
 
-  &--xxs {
-    // fz 12px
-    font-size: var(--fz-xxs);
+  &--caption-2 {
+    font-size: var(--fz-12);
     line-height: rem(18px);
   }
 
-  &--xs {
-    // fz 13px
-    font-size: var(--fz-xs);
+  &--caption-1 {
+    font-size: var(--fz-13);
     line-height: rem(18px);
   }
 
-  &--m {
-    // fz 16px
-    font-size: var(--fz-m);
+  &--body-large {
+    font-size: var(--fz-16);
     line-height: rem(24px);
   }
 
-  &--l {
-    // fz 20px
-    font-size: var(--fz-l);
+  &--h3 {
+    font-size: var(--fz-20);
     line-height: rem(24px);
   }
 
-  &--xl {
-    // fz 24px
-    font-size: var(--fz-xl);
+  &--h2 {
+    font-size: var(--fz-24);
     line-height: rem(32px);
   }
 
-  &--xxl {
-    // fz 34px
-    font-size: var(--fz-xxl);
+  &--h1 {
+    font-size: var(--fz-34);
     line-height: rem(48px);
   }
 
   &--bold {
     // fw 700
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
   }
 
   &--bolder {
     // fw 900
-    font-weight: var(--fw-bolder);
+    font-weight: var(--fw-900);
   }
 }

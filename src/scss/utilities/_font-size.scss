@@ -4,13 +4,13 @@
 :root {
 
   $fontSize: (
-    fz-xxl:rem(34px),
-    fz-xl:rem(24px),
-    fz-l:rem(20px),
-    fz-m:rem(16px),
-    fz-s:rem(14px),
-    fz-xs:rem(13px),
-    fz-xxs:rem(12px),
+    fz-34:rem(34px),
+    fz-24:rem(24px),
+    fz-20:rem(20px),
+    fz-16:rem(16px),
+    fz-14:rem(14px),
+    fz-13:rem(13px),
+    fz-12:rem(12px),
   );
 
   @each $key, $val in $fontSize {
@@ -18,9 +18,8 @@
   }
 
   $fontWeight: (
-    fw-normal: 500,
-    fw-bold: 700,
-    fw-bolder: 900,
+    fw-700: 700,
+    fw-900: 900,
   );
 
   @each $key, $val in $fontWeight {
