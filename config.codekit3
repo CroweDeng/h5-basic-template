@@ -109,6 +109,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/src\/images\/icon\/icon-svg-sprite.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/images\/icon\/icon-svg-sprite.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/src\/images\/test-img-cmpress.jpg" : {
       "ft" : 16384,
       "iS" : 16407,
@@ -155,6 +165,16 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/src\/pug\/utilities\/_svg-icon.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/pug\/utilities\/_svg-icon.html",
+      "oF" : 0,
+      "oS" : 0
     },
     "\/src\/scss\/base\/_base.scss" : {
       "aP" : 0,

@@ -2,6 +2,13 @@
 @use "../vendors/sass-rem/rem" as *;
 
 //? 元件 icon
+.ic {
+  --icon-fill-color: var(--color-primary);
+  display: inline-block;
+  @include size(1em);
+  fill: var(--icon-fill-color, currentColor);
+}
+
 .ic-box {
   display: inline-flex;
   justify-content: center;
@@ -9,26 +16,5 @@
 
   .ic {
     @include size(100%);
-  }
-}
-
-.ic {
-  display: inline-block;
-  background: currentcolor;
-  //? 這個做法建議在web上使用，若沒有使用可以將下方行數刪除
-  //? 效能優先以SVG Sprite 或 SVG
-  // mask-repeat: no-repeat;
-  // mask-position: center center;
-  // mask-size: contain;
-  $icItems: null;
-  @if not $icItems {
-    // 空值則不compile
-  }
-  @else {
-    @each $i in $icItems {
-      &--#{$i} {
-        mask-image: url("../images/icon/ic-#{$i}.svg");
-      }
-    }
   }
 }

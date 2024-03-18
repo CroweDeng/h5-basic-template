@@ -1,0 +1,4 @@
+mixin svg-icon(iconId)
+  - let url = '../images/icon/icon-svg-sprite.svg'
+  svg.ic(class=iconId)
+    use(xlink:href=url+'#'+iconId)

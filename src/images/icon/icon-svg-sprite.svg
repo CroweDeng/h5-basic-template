@@ -1,0 +1,7 @@
+<!-- SVG sprites 合併工具 https://www.zhangxinxu.com/sp/svgo/ -->
+<!-- 需要留意 SVG的線段是否都轉成外框-->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+  <symbol id="ic-sort" viewBox="0 0 16 16">
+    <path d="M5 7l3-3 3 3H5zm6 2l-3 3-3-3h6z" />
+  </symbol>
+</svg>

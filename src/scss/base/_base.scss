@@ -54,37 +54,38 @@ img {
 //? line-heigh https://www.thegoodlineheight.com/ 設定
 .txt {
   // body
-  font-size: var(--fz-14);
-  line-height: rem(18px);
 
-  &--caption-2 {
-    font-size: var(--fz-12);
-    line-height: rem(18px);
+  --txt-fz: #{var(--fz-14)};
+  --txt-line-height: #{rem(18px)};
+  font-size: var(--txt-fz);
+  line-height: var(--txt-line-height);
+
+  &.txt-caption-2 {
+    --txt-fz: #{var(--fz-12)};
   }
 
-  &--caption-1 {
-    font-size: var(--fz-13);
-    line-height: rem(18px);
+  &.txt-caption-1 {
+    --txt-fz: #{var(--fz-13)};
   }
 
-  &--body-large {
-    font-size: var(--fz-16);
-    line-height: rem(24px);
+  &.txt-body-large {
+    --txt-fz: #{var(--fz-16)};
+    --txt-line-height: #{rem(24px)};
   }
 
-  &--h3 {
-    font-size: var(--fz-20);
-    line-height: rem(24px);
+  &.txt-h3 {
+    --txt-fz: #{var(--fz-20)};
+    --txt-line-height: #{rem(24px)};
   }
 
-  &--h2 {
-    font-size: var(--fz-24);
-    line-height: rem(32px);
+  &.txt-h2 {
+    --txt-fz: #{var(--fz-24)};
+    --txt-line-height: #{rem(32px)};
   }
 
-  &--h1 {
-    font-size: var(--fz-34);
-    line-height: rem(48px);
+  &.txt-h1 {
+    --txt-fz: #{var(--fz-34)};
+    --txt-line-height: #{rem(48px)};
   }
 
   &--bold {
