@@ -13,4 +13,3 @@
 
 # Author
 - Crowe Deng
-- LinLin Juan
