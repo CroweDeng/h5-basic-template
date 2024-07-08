@@ -7,7 +7,7 @@
       "uuidString" : "FBAF9DEA-64EA-4FF2-9140-0034E8AB02E4"
     }
   ],
-  "creatorBuild" : "34484",
+  "creatorBuild" : "34576",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -86,9 +86,9 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/README.html",
-      "oF" : 1,
+      "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
       "pHT" : 0,
@@ -1336,9 +1336,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -1350,6 +1347,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
@@ -1404,9 +1404,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0
